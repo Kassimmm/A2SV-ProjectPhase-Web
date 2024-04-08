@@ -1,0 +1,17 @@
+{
+  "name": "utilizing-packages",
+  "version": "1.0.0",
+  "description": "task on utilizing packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kassim tawfick",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.4"
+  }
+}

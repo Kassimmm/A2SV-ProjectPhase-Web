@@ -1,0 +1,130 @@
+You can now view my-todo-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.16.0.2:3000
+
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+
+typescript documentation
+
+https://www.typescriptlang.org/docs/handbook/2/basic-types.html
+
+
+// creating variables
+let name: string;
+let isflag: boolean;
+let arr: string[];
+let role: [number, string];
+
+
+// variables that can take two different data types eg. 20 or "Twenty"
+let age: number | string
+
+// creating objects suing type
+type Person = {
+  name: string,
+  age: number;
+};
+
+//creating object using interface. only difference is remove the equal to sign
+interface Car{
+  name: string,
+  year: number
+}
+
+// using the object = type
+let person1: Person = {
+  name: "Kassim",
+  age: 15
+};
+
+// using the object = interface
+// let car1: Car = {
+//   name: "Rangerover",
+//   year: 2023
+// };
+
+//extending an interface 
+interface Car extends Person{
+  name: string,
+  age: number
+}
+
+//creating an array of objects
+let lotsOfPeople: Person[];
+
+
+//defining a function
+function printName(name: string){
+  console.log(name);
+}
+
+printName("Kassim")
+
+
+//better way to define a funciton
+let printAge: (age: any) => never;
+let printNewAge: (age: any) => unknown;
+
+
+import { CiEdit } from "react-icons/ci";
+import { MdDelete } from "react-icons/md";
+import { MdDone } from "react-icons/md";
+
+
+react-js shopping cart by freecode camp
+
+when running tsc and you getting not recognizing tsc, 
+use "npx tsc sandbox.ts" instead of tsc sandbox.ts
+
+
+ Using npx is a convenient way to run locally installed packages, and it can also be used to run packages installed globally when there are path issues.
+
+npx tsc sandbox.ts -w  // this will recompile and update the sandbox,js everytime automatically
+
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement
+);
+root.render(
+    <App />
+);
+
+
+
+for index.css
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+https://react.dev/learn/describing-the-ui
+
+very very imporant react learning tut: https://github.com/iamshaunjp/Complete-React-Tutorial
